@@ -788,7 +788,7 @@
             const handleDownloadFormat = () => {
                 const dataToExport = state.siswa.length > 0 
                     ? state.siswa.map(({ nis, nama, kelas }) => ({ NIS: nis, Nama: nama, Kelas: kelas }))
-                    : [{ NIS: '1001', Nama: 'Contoh Nama Siswa', Kelas: '5' }];
+                    : [{ NIS: '1001', Nama: 'Contoh Nama Siswa', Kelas: '6' }];
 
                 const ws = XLSX.utils.json_to_sheet(dataToExport);
                 ws['!cols'] = [{ wch: 15 }, { wch: 40 }, { wch: 15 }]; // Set column widths
@@ -1102,4 +1102,5 @@
     </script>
 </body>
 </html>
+
 
