@@ -793,8 +793,8 @@
                 const ws = XLSX.utils.json_to_sheet(dataToExport);
                 ws['!cols'] = [{ wch: 15 }, { wch: 40 }, { wch: 15 }]; // Set column widths
                 const wb = XLSX.utils.book_new();
-                XLSX.utils.book_append_sheet(wb, ws, "BangbinSiswa");
-                XLSX.writeFile(wb, "Bangbin_Absen_siswa.xlsx");
+                XLSX.utils.book_append_sheet(wb, ws, "Murid Yogi");
+                XLSX.writeFile(wb, "Murid Yogi.xlsx");
             };
             
             const handleFileImport = async () => {
@@ -1102,3 +1102,4 @@
     </script>
 </body>
 </html>
+
